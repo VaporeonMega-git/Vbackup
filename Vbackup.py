@@ -6,6 +6,10 @@ bot.remove_command("help")
 
 @bot.command(pass_context=True)
 async def kick(ctx, member: discord.Member):
-    await ctx.send("This command is still in development")
+    await member.kick()
+
+@bot.command(pass_context=True)
+async def ban(ctx, member: discord.Member):
+    await member.ban()
 
 bot.run("")
