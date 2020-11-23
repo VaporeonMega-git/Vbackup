@@ -12,4 +12,9 @@ async def kick(ctx, member: discord.Member):
 async def ban(ctx, member: discord.Member):
     await member.ban()
 
+@bot.command(pass_context=True,aliases=["randomnum","randnum"])
+async def randomnumber(ctx, num1: int, num2: int):
+    rand = random.randint(num1,num2)
+    await ctx.send("Your random number is " + str(rand))
+
 bot.run("")
