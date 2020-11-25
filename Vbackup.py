@@ -47,4 +47,4 @@ async def send_error(ctx, error):
     if isinstance(error,commands.BadArgument):
         await ctx.send("You need to give me an integer!")
 
-bot.run("NzgwNTA4NjMwMzAyMDY0Njgw.X7wHTg.ndZURGXdhOVzca-4RsL5kNnqOH4")
+bot.run("")
